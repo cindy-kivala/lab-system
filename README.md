@@ -5,16 +5,16 @@ A comprehensive web-based system for managing pharmacy operations, lab productio
 ## Features
 
 ### Phase 1 - Internal Operations
-- ✅ Inventory Management with automated reordering
-- ✅ Point of Sale (POS) system
-- ✅ Purchase Order management
-- ✅ Lab production and batch tracking
-- ✅ Reports and analytics
+- Inventory Management with automated reordering
+- Point of Sale (POS) system
+- Purchase Order management
+- Lab production and batch tracking
+- Reports and analytics
 
 ### Phase 2 - E-commerce
-- 🔄 Online storefront for lab-formulated topicals
-- 🔄 Customer portal
-- 🔄 Order fulfillment and shipping
+- Online storefront for lab-formulated topicals
+- Customer portal
+- Order fulfillment and shipping
 
 ## Tech Stack
 

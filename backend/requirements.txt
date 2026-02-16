@@ -1,0 +1,25 @@
+# Flask Core
+Flask==3.0.0
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.5
+Flask-CORS==4.0.0
+Flask-JWT-Extended==4.6.0
+
+# Database
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.23
+
+# Security
+bcrypt==4.1.2
+python-dotenv==1.0.0
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Validation
+email-validator==2.1.0
+Werkzeug==3.0.1
+
+# Development
+flask-shell-ipython==0.4.1

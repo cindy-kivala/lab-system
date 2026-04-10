@@ -1,9 +1,9 @@
 from flask import Blueprint, jsonify
 from flask_jwt_extended import jwt_required
 from datetime import datetime, date, timedelta
-from sqlalchemy import func
+from sqlalchemy import func, desc
 from app import db
-from app.models.sale import Sale
+from app.models.sale import Sale, SaleItem
 from app.models.product import Product
 from app.models.inventory import Inventory
 from app.models.purchase_order import PurchaseOrder
@@ -48,15 +48,15 @@ def get_dashboard_stats():
     # Top selling products (last 30 days)
     thirty_days_ago = datetime.now() - timedelta(days=30)
     top_products_query = db.session.query(
-        Product.name,
-        func.sum(db.literal_column('sale_items.quantity')).label('total_sold')
+       Product.name,
+       func.sum(SaleItem.quantity).label('total_sold')
     ).join(
-        db.literal_column('sale_items'), Product.id == db.literal_column('sale_items.product_id')
+        SaleItem, Product.id == SaleItem.product_id
     ).join(
-        Sale, db.literal_column('sale_items.sale_id') == Sale.id
+        Sale, SaleItem.sale_id == Sale.id
     ).filter(
         Sale.transaction_date >= thirty_days_ago
-    ).group_by(Product.id).order_by(db.desc('total_sold')).limit(5)
+    ).group_by(Product.id).order_by(desc('total_sold')).limit(5).all()
     
     return jsonify({
         'today': {

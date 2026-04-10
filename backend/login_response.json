@@ -1,0 +1,14 @@
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3NTgwMjIzOSwianRpIjoiMjhhMWUwMTAtMjdiOC00MzEyLWJhZGItNmJlMmQwZTJhNGJkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNzc1ODAyMjM5LCJjc3JmIjoiNTBhMWRjZjItOTQ2OS00Yjc0LWI5N2YtNGRlMWU0MmEzYTQyIiwiZXhwIjoxNzc1ODA1ODM5fQ.6v3zPBErLPTAwiz7YhG08axNdyJ6S1SOlXN5E7KreVI",
+  "message": "Login successful",
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3NTgwMjIzOSwianRpIjoiYWVjNjE4OTctNzUwNC00NWNhLTkwNTQtNjU5YmVhNGU5ZjU4IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOjEsIm5iZiI6MTc3NTgwMjIzOSwiY3NyZiI6IjNkODcwNmNlLTljNzctNDViYi1hMmVlLWRlZmQ0ZjFkZDg3ZCIsImV4cCI6MTc3ODM5NDIzOX0.bAtpzzNZlqSdnisuysr7RyvcCF3W9RwT9ZyH7lJVf3w",
+  "user": {
+    "created_at": "2026-02-16T13:38:42.411615",
+    "email": "admin@pharmacy.com",
+    "full_name": "Admin User",
+    "id": 1,
+    "is_active": true,
+    "role": "admin",
+    "updated_at": "2026-04-10T06:17:05.664741"
+  }
+}

@@ -18,7 +18,7 @@ class Formulation(BaseModel):
     base_unit = db.Column(db.String(50), nullable=False)  # g, ml, etc
     
     # Production Details
-    instructions = db.Column(db.Text)
+    instructions = db.Column(db.Text)  # Production instructions
     storage_conditions = db.Column(db.Text)
     shelf_life_days = db.Column(db.Integer)
     
